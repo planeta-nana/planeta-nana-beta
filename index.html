@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>october-16</title>
 
+  <!-- FONTS GO HERE -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Libre+Baskerville&display=swap" rel="stylesheet">
@@ -22,7 +22,7 @@
       font-family: "Libre Baskerville", Georgia, serif;
     }
 
-    .october-16-section {
+    .diary {
       min-height: 100vh;
       padding: 8vh 5.3%;
     }
@@ -86,10 +86,34 @@
       aspect-ratio: 3 / 4;
     }
 
+    /* Navigation */
+
+    .date-nav {
+      display: flex;
+      justify-content: space-between;
+      max-width: 1600px;
+      margin: 60px auto 0;
+      padding-top: 20px;
+      border-top: 1px solid #393832;
+      font-size: 11px;
+      letter-spacing: 0.04em;
+    }
+
+    .date-nav a {
+      color: inherit;
+      text-decoration: none;
+      transition: opacity 0.2s ease;
+    }
+
+    .date-nav a:hover {
+      opacity: 0.55;
+    }
+
     /* Tablet */
 
     @media (max-width: 800px) {
-      .october-16-section {
+      .diary {
+        min-height: auto;
         padding: 60px 6%;
       }
 
@@ -114,7 +138,7 @@
     /* Mobile */
 
     @media (max-width: 520px) {
-      .october-16-section {
+      .diary {
         padding: 45px 7%;
       }
 
@@ -146,48 +170,42 @@
         margin-left: auto;
         margin-right: 0;
       }
-    }
 
-    .date-nav {
-        display: flex;
-        justify-content: space-between;
-        margin-top: 60px;
-        padding-top: 20px;
-    }
-
-    .date-nav a {
-        color: inherit;
-        text-decoration: none;
+      .date-nav {
+        margin-top: 40px;
+        font-size: 10px;
+      }
     }
   </style>
 </head>
 
 <body>
 
-  <section class="october-16-section">
+  <!-- SECTION 1 -->
+  <section class="diary" id="section-1">
     <div class="october-16-grid">
 
       <!-- Column 1: Text -->
       <div class="october-16-copy">
         <h1 class="october-16-title">
-          <span>october 16</span> 2026
+          <span>october 16</span>
         </h1>
 
         <div class="october-16-text">
           <p>
-            Today  went into a community garden and I found a place 
-            to hide so I could hit my vape but then I guess they closed 
-            up while I was hiding because when I tried to get out the 
-            big iron gate was locked up and it dawned on me that I was 
-            locked in this very well fenced garden with no idea who 
+            Today went into a community garden and I found a place
+            to hide so I could hit my vape but then I guess they closed
+            up while I was hiding because when I tried to get out the
+            big iron gate was locked up and it dawned on me that I was
+            locked in this very well fenced garden with no idea who
             has the keys or when they’re coming back. Blah blah blah
           </p>
 
           <p>
-            I ended up climbing a ladder onto the roof of their shed and 
-            then scaling a 12 foot tall chain link fence into the back 
-            corner of another (open)  park that smelled like human shit 
-            but at least I made it out ok. 
+            I ended up climbing a ladder onto the roof of their shed and
+            then scaling a 12 foot tall chain link fence into the back
+            corner of another (open) park that smelled like human shit
+            but at least I made it out ok.
           </p>
         </div>
       </div>
@@ -211,10 +229,123 @@
       </div>
 
     </div>
-    <nav class="date-nav">
-        <a href="oct-15.html">← Previous date</a>
-        <a href="oct-17.html">Next date →</a>
+
+    <nav class="date-nav" aria-label="Diary navigation">
+      <a href="#section-2">↓ next entry</a>
+      <span>01 / 03</span>
     </nav>
   </section>
+
+
+  <!-- SECTION 2 -->
+  <section class="diary" id="section-2">
+    <div class="october-16-grid">
+
+      <!-- Column 1: Text -->
+      <div class="october-16-copy">
+        <h2 class="october-16-title">
+          <span>october 16</span>
+        </h2>
+
+        <div class="october-16-text">
+          <p>
+            Today went into a community garden and I found a place
+            to hide so I could hit my vape but then I guess they closed
+            up while I was hiding because when I tried to get out the
+            big iron gate was locked up and it dawned on me that I was
+            locked in this very well fenced garden with no idea who
+            has the keys or when they’re coming back. Blah blah blah
+          </p>
+
+          <p>
+            I ended up climbing a ladder onto the roof of their shed and
+            then scaling a 12 foot tall chain link fence into the back
+            corner of another (open) park that smelled like human shit
+            but at least I made it out ok.
+          </p>
+        </div>
+      </div>
+
+      <!-- Column 2: Image -->
+      <div class="october-16-image image-one">
+        <img
+          src="images/image_3.jpeg"
+          alt="Portrait photograph"
+          loading="lazy"
+        >
+      </div>
+
+      <!-- Column 3: Image -->
+      <div class="october-16-image image-two">
+        <img
+          src="images/image_4.jpeg"
+          alt="Pink flowers in a garden"
+          loading="lazy"
+        >
+      </div>
+
+    </div>
+
+    <nav class="date-nav" aria-label="Diary navigation">
+      <a href="#section-1">↑ previous entry</a>
+      <span>02 / 03</span>
+      <a href="#section-3">↓ next entry</a>
+    </nav>
+  </section>
+
+
+  <!-- SECTION 3: NEW SECTION -->
+  <section class="diary" id="section-3">
+    <div class="october-16-grid">
+
+      <!-- Column 1: Text -->
+      <div class="october-16-copy">
+        <h2 class="october-16-title">
+          <span>october 16</span>
+        </h2>
+
+        <div class="october-16-text">
+          <p>
+            Add your next little diary entry here. Write about whatever
+            happened that day, the things you noticed, the places you
+            went, or anything you don't want to forget.
+          </p>
+
+          <p>
+            Another paragraph goes here. Keep it short or let it run on
+            for as long as you want. The layout will keep the same
+            typography, spacing, and dark, minimal aesthetic as the
+            sections above.
+          </p>
+        </div>
+      </div>
+
+      <!-- Column 2: Image -->
+      <div class="october-16-image image-one">
+        <img
+          src="images/image_5.jpeg"
+          alt="Diary photograph, image five"
+          loading="lazy"
+        >
+      </div>
+
+      <!-- Column 3: Image -->
+      <div class="october-16-image image-two">
+        <img
+          src="images/image_6.jpeg"
+          alt="Diary photograph, image six"
+          loading="lazy"
+        >
+      </div>
+
+    </div>
+
+    <nav class="date-nav" aria-label="Diary navigation">
+      <a href="#section-2">↑ previous entry</a>
+      <span>03 / 03</span>
+      <a href="#top">back to top ↑</a>
+    </nav>
+  </section>
+
 </body>
 </html>
