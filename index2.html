@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>october-16</title>
+
+  <!-- FONTS GO HERE -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Libre+Baskerville&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+ 
+    body {
+      margin: 0;
+      background: #121210;
+      color: #f8f5f0;
+      font-family: "Times New Roman", Times, serif;
+    }
+
+    .diary {
+      min-height: 100vh;
+      padding: 8vh 5.3%;
+    }
+ 
+    .october-16-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 1fr 0.8fr;
+      gap: 4%;
+      align-items: start;
+      max-width: 1600px;
+      margin: 0 auto;
+    }
+ 
+    /* Column 1: Text */
+ 
+    .october-16-title {
+      font-family: "Times New Roman", Times, serif;
+      font-weight: 400;
+      font-size: clamp(58px, 6vw, 90px);
+      line-height: 0.78;
+      letter-spacing: -0.06em;
+      margin: 0 0 30px;
+    }
+ 
+    .october-16-title span {
+      display: block;
+      font-size: 0.62em;
+      letter-spacing: -0.04em;
+      margin-bottom: 8px;
+    }
+ 
+    .october-16-text {
+      padding-left: 20px;
+      font-size: 13px;
+      line-height: 1.9;
+    }
+ 
+    .october-16-text p {
+      margin: 0 0 25px;
+    }
+ 
+    /* Columns 2 and 3: Images */
+ 
+    .october-16-image {
+      width: 100%;
+      margin-top: 65px;
+    }
+ 
+    .october-16-image img {
+      display: block;
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+ 
+    .image-one img {
+      aspect-ratio: 1 / 1;
+    }
+ 
+    .image-two img {
+      aspect-ratio: 3 / 4;
+    }
+
+    /* Navigation */
+
+    .date-nav {
+      display: flex;
+      justify-content: space-between;
+      max-width: 1600px;
+      margin: 60px auto 0;
+      padding-top: 20px;
+      border-top: 1px solid #393832;
+      font-size: 11px;
+      letter-spacing: 0.04em;
+    }
+
+    .date-nav a {
+      color: inherit;
+      text-decoration: none;
+      transition: opacity 0.2s ease;
+    }
+
+    .date-nav a:hover {
+      opacity: 0.55;
+    }
+
+    /* Tablet */
+ 
+    @media (max-width: 800px) {
+      .diary {
+        min-height: auto;
+        padding: 60px 6%;
+      }
+ 
+      .october-16-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 35px;
+      }
+ 
+      .october-16-copy {
+        grid-column: 1 / -1;
+      }
+ 
+      .october-16-text {
+        padding-left: 0;
+      }
+ 
+      .october-16-image {
+        margin-top: 0;
+      }
+    }
+ 
+    /* Mobile */
+ 
+    @media (max-width: 520px) {
+      .diary {
+        padding: 45px 7%;
+      }
+ 
+      .october-16-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+ 
+      .october-16-copy {
+        grid-column: auto;
+      }
+ 
+      .october-16-title {
+        font-size: 76px;
+      }
+ 
+      .october-16-text {
+        font-size: 13px;
+      }
+ 
+      .october-16-image {
+        width: 100%;
+        max-width: 420px;
+        margin: 0 auto;
+      }
+ 
+      .image-two {
+        max-width: 300px;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .date-nav {
+        margin-top: 40px;
+        font-size: 10px;
+      }
+    }
+  </style>
+</head>
+ 
+<body>
+
+  <!-- SECTION 1 -->
+  <section class="diary" id="section-1">
+    <div class="october-16-grid">
+ 
+      <!-- Column 1: Text -->
+      <div class="october-16-copy">
+        <h1 class="october-16-title">
+          <span>october 16</span>
+        </h1>
+
+        <!-- TINKER HERE -->
+        <div class="october-16-text">
+          <p>
+            Today went into a community garden and I found a place
+            to hide so I could hit my vape but then I guess they closed
+            up while I was hiding because when I tried to get out the
+            big iron gate was locked up and it dawned on me that I was
+            locked in this very well fenced garden with no idea who
+            has the keys or when they’re coming back. Blah blah blah
+          </p>
+ 
+          <p>
+            I ended up climbing a ladder onto the roof of their shed and
+            then scaling a 12 foot tall chain link fence into the back
+            corner of another (open) park that smelled like human shit
+            but at least I made it out ok.
+          </p>
+        </div>
+      </div>
+ 
+      <!-- Column 2: Image -->
+      <!-- IMAGES GO HERE -->
+      <div class="october-16-image image-one">
+        <img
+          src="images/image_1.jpeg"
+          alt="Portrait photograph"
+          loading="lazy"
+        >
+      </div>
+ 
+      <!-- Column 3: Image -->
+      <div class="october-16-image image-two">
+        <img
+          src="images/image_2.jpeg"
+          alt="Pink flowers in a garden"
+          loading="lazy"
+        >
+      </div>
+ 
+    </div>
+
+    <nav class="date-nav" aria-label="Diary navigation">
+      <a href="#section-2">↓ next entry</a>
+      <span>01 / 03</span>
+    </nav>
+  </section>
+
+
+  <!-- SECTION 2 -->
+  <section class="diary" id="section-2">
+    <div class="october-16-grid">
+
+      <!-- Column 1: Text -->
+      <div class="october-16-copy">
+        <h2 class="october-16-title">
+          <span>october 16</span>
+        </h2>
+
+        <div class="october-16-text">
+          <p>
+            Today went into a community garden and I found a place
+            to hide so I could hit my vape but then I guess they closed
+            up while I was hiding because when I tried to get out the
+            big iron gate was locked up and it dawned on me that I was
+            locked in this very well fenced garden with no idea who
+            has the keys or when they’re coming back. Blah blah blah
+          </p>
+
+          <p>
+            I ended up climbing a ladder onto the roof of their shed and
+            then scaling a 12 foot tall chain link fence into the back
+            corner of another (open) park that smelled like human shit
+            but at least I made it out ok.
+          </p>
+        </div>
+      </div>
+
+      <!-- Column 2: Image -->
+      <div class="october-16-image image-one">
+        <img
+          src="images/image_3.jpeg"
+          alt="Portrait photograph"
+          loading="lazy"
+        >
+      </div>
+
+      <!-- Column 3: Image -->
+      <div class="october-16-image image-two">
+        <img
+          src="images/image_4.jpeg"
+          alt="Pink flowers in a garden"
+          loading="lazy"
+        >
+      </div>
+
+    </div>
+
+    <nav class="date-nav" aria-label="Diary navigation">
+      <a href="#section-1">↑ previous entry</a>
+      <span>02 / 03</span>
+      <a href="#section-3">↓ next entry</a>
+    </nav>
+  </section>
+
+
+  <!-- SECTION 3: NEW SECTION -->
+  <section class="diary" id="section-3">
+    <div class="october-16-grid">
+
+      <!-- Column 1: Text -->
+      <div class="october-16-copy">
+        <h2 class="october-16-title">
+          <span>october 16</span>
+        </h2>
+
+        <div class="october-16-text">
+          <p>
+            Add your next little diary entry here. Write about whatever
+            happened that day, the things you noticed, the places you
+            went, or anything you don't want to forget.
+          </p>
+
+          <p>
+            Another paragraph goes here. Keep it short or let it run on
+            for as long as you want. The layout will keep the same
+            typography, spacing, and dark, minimal aesthetic as the
+            sections above.
+          </p>
+        </div>
+      </div>
+
+      <!-- Column 2: Image -->
+      <div class="october-16-image image-one">
+        <img
+          src="images/image_5.jpeg"
+          alt="Diary photograph, image five"
+          loading="lazy"
+        >
+      </div>
+
+      <!-- Column 3: Image -->
+      <div class="october-16-image image-two">
+        <img
+          src="images/image_6.jpeg"
+          alt="Diary photograph, image six"
+          loading="lazy"
+        >
+      </div>
+
+    </div>
+
+    <nav class="date-nav" aria-label="Diary navigation">
+      <a href="#section-2">↑ previous entry</a>
+      <span>03 / 03</span>
+      <a href="#top">back to top ↑</a>
+    </nav>
+  </section>
+
+</body>
+</html>
