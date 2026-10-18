@@ -1,0 +1,220 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>october-16</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Libre+Baskerville&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: #121210;
+      color: #f8f5f0;
+      font-family: "Libre Baskerville", Georgia, serif;
+    }
+
+    .october-16-section {
+      min-height: 100vh;
+      padding: 8vh 5.3%;
+    }
+
+    .october-16-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 1fr 0.8fr;
+      gap: 4%;
+      align-items: start;
+      max-width: 1600px;
+      margin: 0 auto;
+    }
+
+    /* Column 1: Text */
+
+    .october-16-title {
+      font-family: "DM Serif Display", Georgia, serif;
+      font-weight: 400;
+      font-size: clamp(58px, 6vw, 90px);
+      line-height: 0.78;
+      letter-spacing: -0.06em;
+      margin: 0 0 30px;
+    }
+
+    .october-16-title span {
+      display: block;
+      font-size: 0.62em;
+      letter-spacing: -0.04em;
+      margin-bottom: 8px;
+    }
+
+    .october-16-text {
+      padding-left: 20px;
+      font-size: 13px;
+      line-height: 1.9;
+    }
+
+    .october-16-text p {
+      margin: 0 0 25px;
+    }
+
+    /* Columns 2 and 3: Images */
+
+    .october-16-image {
+      width: 100%;
+      margin-top: 65px;
+    }
+
+    .october-16-image img {
+      display: block;
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+
+    .image-one img {
+      aspect-ratio: 1 / 1;
+    }
+
+    .image-two img {
+      aspect-ratio: 3 / 4;
+    }
+
+    /* Tablet */
+
+    @media (max-width: 800px) {
+      .october-16-section {
+        padding: 60px 6%;
+      }
+
+      .october-16-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 35px;
+      }
+
+      .october-16-copy {
+        grid-column: 1 / -1;
+      }
+
+      .october-16-text {
+        padding-left: 0;
+      }
+
+      .october-16-image {
+        margin-top: 0;
+      }
+    }
+
+    /* Mobile */
+
+    @media (max-width: 520px) {
+      .october-16-section {
+        padding: 45px 7%;
+      }
+
+      .october-16-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+
+      .october-16-copy {
+        grid-column: auto;
+      }
+
+      .october-16-title {
+        font-size: 76px;
+      }
+
+      .october-16-text {
+        font-size: 13px;
+      }
+
+      .october-16-image {
+        width: 100%;
+        max-width: 420px;
+        margin: 0 auto;
+      }
+
+      .image-two {
+        max-width: 300px;
+        margin-left: auto;
+        margin-right: 0;
+      }
+    }
+
+    .date-nav {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 60px;
+        padding-top: 20px;
+    }
+
+    .date-nav a {
+        color: inherit;
+        text-decoration: none;
+    }
+  </style>
+</head>
+
+<body>
+
+  <section class="october-16-section">
+    <div class="october-16-grid">
+
+      <!-- Column 1: Text -->
+      <div class="october-16-copy">
+        <h1 class="october-16-title">
+          <span>october 16</span> 2026
+        </h1>
+
+        <div class="october-16-text">
+          <p>
+            Today  went into a community garden and I found a place 
+            to hide so I could hit my vape but then I guess they closed 
+            up while I was hiding because when I tried to get out the 
+            big iron gate was locked up and it dawned on me that I was 
+            locked in this very well fenced garden with no idea who 
+            has the keys or when they’re coming back.  
+          </p>
+
+          <p>
+            I ended up climbing a ladder onto the roof of their shed and 
+            then scaling a 12 foot tall chain link fence into the back 
+            corner of another (open)  park that smelled like human shit 
+            but at least I made it out ok. 
+          </p>
+        </div>
+      </div>
+
+      <!-- Column 2: Image -->
+      <div class="october-16-image image-one">
+        <img
+          src="images/oct-16-1.jpeg"
+          alt="Portrait photograph"
+          loading="lazy"
+        >
+      </div>
+
+      <!-- Column 3: Image -->
+      <div class="october-16-image image-two">
+        <img
+          src="images/oct-16-2.jpeg"
+          alt="Pink flowers in a garden"
+          loading="lazy"
+        >
+      </div>
+
+    </div>
+    <nav class="date-nav">
+        <a href="oct-15.html">← Previous date</a>
+        <a href="oct-17.html">Next date →</a>
+    </nav>
+  </section>
+</body>
+</html>
