@@ -14,19 +14,19 @@
     * {
       box-sizing: border-box;
     }
-
+ 
     body {
       margin: 0;
       background: #121210;
       color: #f8f5f0;
-      font-family: "Libre Baskerville", Georgia, serif;
+      font-family: "Times New Roman", Times, serif;
     }
 
     .diary {
       min-height: 100vh;
       padding: 8vh 5.3%;
     }
-
+ 
     .october-16-grid {
       display: grid;
       grid-template-columns: 1.1fr 1fr 0.8fr;
@@ -35,53 +35,53 @@
       max-width: 1600px;
       margin: 0 auto;
     }
-
+ 
     /* Column 1: Text */
-
+ 
     .october-16-title {
-      font-family: "DM Serif Display", Georgia, serif;
+      font-family: "Times New Roman", Times, serif;
       font-weight: 400;
       font-size: clamp(58px, 6vw, 90px);
       line-height: 0.78;
       letter-spacing: -0.06em;
       margin: 0 0 30px;
     }
-
+ 
     .october-16-title span {
       display: block;
       font-size: 0.62em;
       letter-spacing: -0.04em;
       margin-bottom: 8px;
     }
-
+ 
     .october-16-text {
       padding-left: 20px;
       font-size: 13px;
       line-height: 1.9;
     }
-
+ 
     .october-16-text p {
       margin: 0 0 25px;
     }
-
+ 
     /* Columns 2 and 3: Images */
-
+ 
     .october-16-image {
       width: 100%;
       margin-top: 65px;
     }
-
+ 
     .october-16-image img {
       display: block;
       width: 100%;
       height: auto;
       object-fit: cover;
     }
-
+ 
     .image-one img {
       aspect-ratio: 1 / 1;
     }
-
+ 
     .image-two img {
       aspect-ratio: 3 / 4;
     }
@@ -110,61 +110,61 @@
     }
 
     /* Tablet */
-
+ 
     @media (max-width: 800px) {
       .diary {
         min-height: auto;
         padding: 60px 6%;
       }
-
+ 
       .october-16-grid {
         grid-template-columns: 1fr 1fr;
         gap: 35px;
       }
-
+ 
       .october-16-copy {
         grid-column: 1 / -1;
       }
-
+ 
       .october-16-text {
         padding-left: 0;
       }
-
+ 
       .october-16-image {
         margin-top: 0;
       }
     }
-
+ 
     /* Mobile */
-
+ 
     @media (max-width: 520px) {
       .diary {
         padding: 45px 7%;
       }
-
+ 
       .october-16-grid {
         grid-template-columns: 1fr;
         gap: 30px;
       }
-
+ 
       .october-16-copy {
         grid-column: auto;
       }
-
+ 
       .october-16-title {
         font-size: 76px;
       }
-
+ 
       .october-16-text {
         font-size: 13px;
       }
-
+ 
       .october-16-image {
         width: 100%;
         max-width: 420px;
         margin: 0 auto;
       }
-
+ 
       .image-two {
         max-width: 300px;
         margin-left: auto;
@@ -178,13 +178,13 @@
     }
   </style>
 </head>
-
+ 
 <body>
 
   <!-- SECTION 1 -->
   <section class="diary" id="section-1">
     <div class="october-16-grid">
-
+ 
       <!-- Column 1: Text -->
       <div class="october-16-copy">
         <h1 class="october-16-title">
@@ -201,7 +201,7 @@
             locked in this very well fenced garden with no idea who
             has the keys or when they’re coming back. Blah blah blah
           </p>
-
+ 
           <p>
             I ended up climbing a ladder onto the roof of their shed and
             then scaling a 12 foot tall chain link fence into the back
@@ -210,7 +210,7 @@
           </p>
         </div>
       </div>
-
+ 
       <!-- Column 2: Image -->
       <!-- IMAGES GO HERE -->
       <div class="october-16-image image-one">
@@ -220,7 +220,7 @@
           loading="lazy"
         >
       </div>
-
+ 
       <!-- Column 3: Image -->
       <div class="october-16-image image-two">
         <img
@@ -229,7 +229,7 @@
           loading="lazy"
         >
       </div>
-
+ 
     </div>
 
     <nav class="date-nav" aria-label="Diary navigation">
